@@ -56,24 +56,3 @@ int solution(vector<int> &A) {
     
     return cnt;
 }
-
-// Brackets
-// 25%
-int solution(string &S) {
-    // write your code in C++14 (g++ 6.2.0)
-    
-    if(*S.begin() == 91)
-    {
-        if(*(S.end()-1) == 93)
-            return 1;
-    }
-    else if(*S.begin() == 123)
-    {
-        if(*(S.end()-1) == 125)
-            return 1;
-    }
-    else if(*S.begin() == (*(S.end()-1))-1)
-        return 1;
-    else
-        return 0;
-}
